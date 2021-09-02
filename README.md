@@ -1,5 +1,5 @@
-# <p align="center">OhayouSenpaiBot for Telegram
-<p align="center">A friki bot for anime, memes, and waifus. Just trust in Senpai
+# <p align="center">ohayouSenpaiBot for Telegram
+<p align="center">A friki bot for anime, memes, and waifus. Just trust in Senpai.
 
 
 <details open="open">
@@ -30,14 +30,12 @@
 ## About The Project
 
 This is a telegram bot that can be founded as @ohayouSenpaiBot, the features are mainly focused in anime world searching, but not limited to this. 
-The goal of this project is to add new features and enhance the functionability of the bot, feel free to add new commands and features :'3
+The goal of this project is to add new features and enhance the functionability of the bot. Feel free to add new commands and features :'3
 
 ### Built With
 
+Just python, because python is love <3
 * [python](https://www.python.org/)
-* [pyTelegramBotAPI](https://github.com/eternnoir/pyTelegramBotAPI)
-* [animec](https://pypi.org/project/animec/)
-* [praw](https://github.com/praw-dev/praw)
 
 
 ## Getting Started
@@ -46,15 +44,49 @@ These are instructions to setup your own instance of this project locally.
 
 ### Prerequisites
 
-* Create your telegram bot with [BotFather](https://core.telegram.org/bots#6-botfather), save in .env the API token
-* Create your [reddit app](https://www.reddit.com/prefs/apps) , save in .env the client-id, secret-key , and username
+* Create your telegram bot with [BotFather](https://core.telegram.org/bots#6-botfather), save the API key
+* Create your [reddit app](https://www.reddit.com/prefs/apps) , save the client-id, secret-key, and user-agent
+* Install python 3, also a virtual environment is recommended to use
 
+                                       
 ### Installation
 
+* Clone the repository:
+  ```sh
+  $ git clone https://github.com/VolnuttZ/senpai-bot.git
+  $ cd senpai-bot
+  ```
+* Install `requirements.txt` :
+  ```sh
+  $ python3 -m pip install -r requirements.txt
+  ```
+* Create `.env` file and add the environment variables of prerequisites, you could use your favorite text editor or command line:
+  ```sh
+  API_KEY = 'your api-key'
+  CLIENT_ID = 'your client-id'
+  SECRET_KEY = 'your secret-key'
+  USER_AGENT = 'your user-agent'
+  ```
+* Run `main.py`:
+  ```sh
+  $ python3 main.py
+  ```
+  
 
 ## Usage
 
+### List of commands
+  * `/holi` say holi 
+  * `/meme` random meme
+  * `/waifu` random waifu gif
+  * `/news` latest anime news
+  * `/anime` anime description
+  * `/character` character image
+  * `/openings` anime openings
+  * `/endings` anime endings
+  * `/recommend` anime recommendations
 
+                                       
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
@@ -79,3 +111,9 @@ Project Link: [https://github.com/VolnuttZ/senpai-bot](https://github.com/Volnut
 
 
 ## Acknowledgements
+
+* [pyTelegramBotAPI](https://github.com/eternnoir/pyTelegramBotAPI)
+* [Animec](https://animec.readthedocs.io/en/latest/)
+* [PRAW: The Python Reddit API Wrapper](https://github.com/praw-dev/praw)
+* [MyAnimeList](https://myanimelist.net/)
+* [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
